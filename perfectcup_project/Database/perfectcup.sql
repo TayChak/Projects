@@ -35,14 +35,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
---
--- Dumping data for table `members`
---
 
-INSERT INTO `members` (`id`, `fname`, `lname`, `email`, `password`) VALUES
-(1, 'John', 'Smith', 'john@test3.com', '$2y$12$.Tv/Cn55yl0lMa1OJBG0H.s/EAHei.5B.09r5VEgMw6VJx2dCn/b2'),
-(3, 'Jo', 'Bob', 'jb@gmail.com', '$2y$12$i2t2T46owP4H2kCgLxvZ0uRm3tt8HZHHSC5fFvib/AZYcWM0EnBda'),
-(4, 'jo', 'bo', 'jbt@gmail.com', '$2y$12$Jwd8Di8XO1rbiLoWo6qChOL4UxAXvCWo4WhTqQEmVnPdt61Db8Rm.');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
