@@ -13,28 +13,50 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style type="text/css">
-      body { background-color:#DDD; }
+     body { 
+        background-color:#DDD;
+        padding-top: 10px;
+      }
       [class*="col"] { margin-bottom: 20px; }
-      .form-inline { margin-top: 20px}
       img { width: 100%; }
       .well {
         background-color:#CCC;
         padding: 20px;
       }
+      .inline-form input {
+        display: inline-block;
+        width: 100px;
+      }
+
     </style>
   </head>
 
   <body>
     <div class="container">
-      <header class="row">
-        <div class="col-sm-12 col-lg-7">
-          <h1>Mon amour pour les tigres</h1>
+      
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Mon site</a>
         </div>
-        <div class="col-sm-12 col-lg-5">
-          <form class="form-inline pull-right">
-            <input type="text" style="width:150px" class="input-sm form-control" placeholder="Recherche">
-            <button type="submit" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+          <ul class="nav navbar-nav">
+            <li class="active"> <a href="#">Accueil</a> </li>
+            <li> <a href="#">Liens</a> </li>
+            <li> <a href="#">Témoignages</a> </li>
+            <li> <a href="#">Références</a> </li>
+            <li><a href="#">Bibliographie</a></li>
+          </ul>
+          <form class="navbar-form navbar-right inline-form">
+            <div class="form-group">
+              <input type="search" class="input-sm form-control" placeholder="Recherche">
+              <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+            </div>
           </form>
+        </div>
+      </nav>
+      <header class="row">
+        <div class="col-lg-12">
+          <h1>Mon amour pour les tigres</h1>
         </div>
       </header>
       <section class="row">
@@ -69,15 +91,15 @@
           <h5>Voici les sous-espèces des tigres :</h5>
           <br>
           <ul>
-            <li>Tigre de Sibérie</li>
-            <li>Tigre de Chine méridionale</li>
-            <li>Tigre de Bali</li>
-            <li>Tigre de d'Indochine</li>
-            <li>Tigre de Malaisie</li>
-            <li>Tigre de Java</li>
-            <li>Tigre de Sumatra</li>
-            <li>Tigre du Bengale</li>
-            <li>Tigre de la Caspienne</li>
+            <li>Tigre de Sibérie <span class="badge">230</span></li>
+            <li>Tigre de Chine méridionale <span class="badge">120</span></li>
+            <li>Tigre de Bali <span class="badge">540</span></li>
+            <li>Tigre de d'Indochine <span class="badge">230</span></li>
+            <li>Tigre de Malaisie <span class="badge">240</span></li>
+            <li>Tigre de Java <span class="badge">1200</span></li>
+            <li>Tigre de Sumatra <span class="badge">710</span></li>
+            <li>Tigre du Bengale <span class="badge">20</span></li>
+            <li>Tigre de la Caspienne <span class="badge">40</span></li>
           </ul>
 
           <dl>
@@ -92,7 +114,9 @@
           </dl>
         </section>
         <section class="col-sm-8">
+          <div class="thumbnail">
           <img src="images/photo-tigre.jpg" alt="Tigre" class="img-rounded">
+          </div>
         </section>
       </div>
       <div class="row">
